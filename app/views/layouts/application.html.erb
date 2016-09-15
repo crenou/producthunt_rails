@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProductHunt</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+  <header class="main-header">
+			<div class="header-wrap">
+		      <a href="https://www.producthunt.com" class="logo-link">
+		        <img src ="img/logo.png" alt="Product Hunt Logo" class ="logo">
+		      </a>
+
+					<!-- <img src="img/search-icon.png" height="15px" class="search-icon"> -->
+					<!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+					<form class="search-form">
+				    <input type="text" class="search-bar" placeholder="Discover your next favourite thing...">
+				  </form>
+
+
+		      <a href="#" class="dropdown-tabs">...</a>
+		      <a href="#" class="login-button">login</a>
+		      <nav class="main-nav">
+		        <a class="main-nav__link-active" href="#">
+							<p class="main-nav__link-text">Home</p>
+						</a>
+		        <a class="main-nav__link nav__link-1" href="#">
+							<p class="main-nav__link-text">Tech</p>
+						</a>
+		        <a class="main-nav__link nav__link-2" href="#">
+							<p class="main-nav__link-text">Games</p>
+						</a>
+		        <a class="main-nav__link nav__link-3" href="#">
+							<p class="main-nav__link-text">Podcasts</p>
+						</a>
+		        <a class="main-nav__link nav__link-4" href="#">
+							<p class="main-nav__link-text">Books</p>
+						</a>
+		        <a class="main-nav__link nav__link-5" href="#">
+							<p class="main-nav__link-text">Bots</p>
+						</a>
+		        <a class="main-nav__link nav__link-6" href="#">
+							<p class="main-nav__link-text">Developer Tools</p>
+							</a>
+		        <a class="main-nav__link nav__link-7" href="#">
+							<p class="main-nav__link-text">Photography Tools</p>
+						</a>
+		        <a class="main-nav__link nav__link-8" href="#">
+							<p class="main-nav__link-text">Pokemon</p>
+						</a>
+						<a class="main-nav__link nav__link-9" href="#">
+							<p class="main-nav__link-text">Slack</p>
+						</a>
+						<a class="main-nav__link nav__link-10" href="#">
+							<p class="main-nav__link-text">Wearables</p>
+						</a>
+		        <!-- <a class="main-nav__link-arrows" href="#">
+							<p> < </p>
+						</a>
+		        <a class="main-nav__link-arrows" href="#">
+							<p> > </p> -->
+						</a>
+		      </nav>
+			</div>
+	  </header>
+    <%= yield %>
+  </body>
+</html>
