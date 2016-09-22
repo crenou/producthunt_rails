@@ -3,6 +3,12 @@
 		<div class="h5-wrap"><h5 class="section-title">While you were away</h5></div>
 	  <section class="product-links">
 <% @products.each do |product| %>
+<%= button_to upvote_product_path(product), class: 'upvote' do %>
+&#9650;
+<br>
+<span class = "votes"><%= product.votes.count%></span<span>
+<%end%>
+
       <a href="#" class="product-link">
   			<img src="http://www.fillmurray.com/80/80" alt="Placeholder Bill Murray" class="product-image">
         <div class="product-content__text">
